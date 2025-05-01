@@ -1,0 +1,167 @@
+package com.integra.iams.dto;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.sql.Timestamp;
+import java.util.Date;
+
+public class AdmAttemployeeMasterDTO implements Serializable {
+  private static final long serialVersionUID = 1L;
+  
+  private long slNo;
+  
+  private BigDecimal active;
+  
+  private String branchCode;
+  
+  private String circleCode;
+  
+  private String designation;
+  
+  private String regionCode;
+  
+  private String uiUserId;
+  
+  private String uiUserName;
+  
+  private Timestamp userInsertedDate;
+  
+  private String defaultPreferredDevice;
+  
+  private String branchName;
+  
+  private String regionName;
+  
+  private String circleName;
+  
+  @JsonFormat(pattern = "dd-MMM-yyyy", timezone = "IST")
+  private Date shiftStartTime;
+  
+  @JsonFormat(pattern = "dd-MMM-yyyy", timezone = "IST")
+  private Date date;
+  
+  public String getDefaultPreferredDevice() {
+    return this.defaultPreferredDevice;
+  }
+  
+  public void setDefaultPreferredDevice(String defaultPreferredDevice) {
+    this.defaultPreferredDevice = defaultPreferredDevice;
+  }
+  
+  public long getSlNo() {
+    return this.slNo;
+  }
+  
+  public void setSlNo(long slNo) {
+    this.slNo = slNo;
+  }
+  
+  public BigDecimal getActive() {
+    return this.active;
+  }
+  
+  public void setActive(BigDecimal active) {
+    this.active = active;
+  }
+  
+  public String getBranchCode() {
+    return this.branchCode;
+  }
+  
+  public void setBranchCode(String branchCode) {
+    this.branchCode = branchCode;
+  }
+  
+  public String getCircleCode() {
+    return this.circleCode;
+  }
+  
+  public void setCircleCode(String circleCode) {
+    this.circleCode = circleCode;
+  }
+  
+  public String getDesignation() {
+    return this.designation;
+  }
+  
+  public void setDesignation(String designation) {
+    this.designation = designation;
+  }
+  
+  public String getRegionCode() {
+    return this.regionCode;
+  }
+  
+  public void setRegionCode(String regionCode) {
+    this.regionCode = regionCode;
+  }
+  
+  public String getUiUserId() {
+    return this.uiUserId;
+  }
+  
+  public void setUiUserId(String uiUserId) {
+    this.uiUserId = uiUserId;
+  }
+  
+  public String getUiUserName() {
+    return this.uiUserName;
+  }
+  
+  public void setUiUserName(String uiUserName) {
+    this.uiUserName = uiUserName;
+  }
+  
+  public Timestamp getUserInsertedDate() {
+    return this.userInsertedDate;
+  }
+  
+  public void setUserInsertedDate(Timestamp userInsertedDate) {
+    this.userInsertedDate = userInsertedDate;
+  }
+  
+  public Date getDate() {
+    return this.date;
+  }
+  
+  public void setDate(Date date) {
+    this.date = date;
+  }
+  
+  public String getBranchName() {
+    return this.branchName;
+  }
+  
+  public void setBranchName(String branchName) {
+    this.branchName = branchName;
+  }
+  
+  public String getRegionName() {
+    return this.regionName;
+  }
+  
+  public void setRegionName(String regionName) {
+    this.regionName = regionName;
+  }
+  
+  public String getCircleName() {
+    return this.circleName;
+  }
+  
+  public void setCircleName(String circleName) {
+    this.circleName = circleName;
+  }
+  
+  public Date getShiftStartTime() {
+    return this.shiftStartTime;
+  }
+  
+  public void setShiftStartTime(Date shiftStartTime) {
+    this.shiftStartTime = shiftStartTime;
+  }
+  
+  public String toString() {
+    return "AdmAttemployeeMasterDTO [slNo=" + this.slNo + ", active=" + this.active + ", branchCode=" + this.branchCode + ", circleCode=" + this.circleCode + ", designation=" + this.designation + ", regionCode=" + this.regionCode + ", uiUserId=" + this.uiUserId + ", uiUserName=" + this.uiUserName + ", userInsertedDate=" + this.userInsertedDate + ", defaultPreferredDevice=" + this.defaultPreferredDevice + ", branchName=" + this.branchName + ", regionName=" + this.regionName + ", circleName=" + this.circleName + ", shiftStartTime=" + this.shiftStartTime + ", date=" + this.date + "]";
+  }
+}
